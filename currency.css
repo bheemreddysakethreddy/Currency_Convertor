@@ -1,0 +1,120 @@
+/* Reset some basic defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #9cc0e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+}
+
+.currency-convertor h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #211d1d;
+}
+
+.enter-input {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+
+.currency-convertor input[type="number"],
+.currency-convertor input[type="text"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #b3a1a1;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.currency-convertor input:focus {
+    border-color: #000000;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+}
+
+.from, .to {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.from img, .to img {
+    width: 40px;
+    height: auto;
+}
+
+.from select, .to select {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* .fa-right-left {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 2rem;
+} */
+ .fa-right-left {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 2rem;
+    position: relative;
+    top: -30px; /* Moves it slightly upward */
+}
+
+.msg {
+    text-align: center;
+}
+
+.msg_para {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #141313;
+    
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
